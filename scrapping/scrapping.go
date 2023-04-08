@@ -53,6 +53,7 @@ func Test() {
 		fmt.Printf("Hasil: %s \n", word.image)
 	})
 
+	// Visit The Website
 	c.Visit("https://scrapeme.live/shop/")
 
 	// opening the CSV file
@@ -62,7 +63,7 @@ func Test() {
 	}
 	defer file.Close()
 
-	// // initializing a file writer
+	// initializing a file writer
 	writer := csv.NewWriter(file)
 
 	// writing the CSV headers
